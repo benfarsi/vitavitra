@@ -1,0 +1,39 @@
+{
+  "expo": {
+    "name": "Vita Vitra",
+    "slug": "vitavitra",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "splash": {
+      "backgroundColor": "#0D1A3A"
+    },
+    "assetBundlePatterns": ["**/*"],
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.vitavitra.app"
+    },
+    "android": {
+      "adaptiveIcon": {
+        "backgroundColor": "#0D1A3A"
+      },
+      "package": "com.vitavitra.app"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "@stripe/stripe-react-native",
+        {
+          "merchantIdentifier": "merchant.com.vitavitra.app"
+        }
+      ]
+    ],
+    "scheme": "vitavitra",
+    "extra": {
+      "eas": {
+        "projectId": "your-eas-project-id"
+      }
+    }
+  }
+}
