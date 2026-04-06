@@ -18,7 +18,7 @@ const SIZES: Record<LogoSize, { name: number; tagline: number }> = {
  * Vita Vitra text wordmark — "VITA VITRA" bold navy with "Visibly Vital" subtitle.
  */
 export default function Logo({ size = 'md', onDark = false }: LogoProps) {
-  const sz = SIZES[size];
+  const sz = SIZES[size] ?? SIZES['md'];
   return (
     <View>
       <Text
